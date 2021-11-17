@@ -112,7 +112,32 @@
 // }
 // Console.WriteLine(SummNumb(1, 10));  
 
+// 31. Задать массив из 8 элементов и вывести их на экран
 
+//int[] CreateArray(int count)
+// {
+//     return new int[count];
+// }
+// string PrintArray(int[] array)
+// {
+//     string res = String.Empty;
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         res += $"{array[i]} ";
+//     }
+//     return res;
+// }
+// void FillArray(int[] array, int min, int max)
+// {
+//     string res = String.Empty;
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         array[i] = new Random().Next(min, max + 1);
+//     }
+// }
+// int [] arr = CreateArray(8);
+// FillArray(arr,1,10);
+// Console.WriteLine(PrintArray(arr));
 
 
 
