@@ -139,6 +139,10 @@
 // FillArray(arr,1,10);
 // Console.WriteLine(PrintArray(arr));
 
+// //32. Задать массив из 8 элементов, заполненных нулями и единицами вывести их на экран
 
+// int [] arr = CreateArray(8);
+// FillArray(arr,0,1);
+// Console.WriteLine(PrintArray(arr));
 
 
