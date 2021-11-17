@@ -93,21 +93,24 @@
 
 // // 30. Показать кубы чисел, заканчивающихся на четную цифру (доделать!!!!)
 
-//  int SummNumb(int arg1, int arg2)
-//  {
-//      int a = 0;
-//      while(arg1 < arg2 && arg1 % 2 ==0)  
-//      {
-//          for(int i = arg1; i < arg2; arg1 = arg1 + 2)
-//          {
-//             a = arg1*arg1*arg1;
-//             Console.Write($"{a} ");
-//             Console.Write($"{arg1} {arg2}");
-//          }   
-//      }
-//     return a; 
-//  }
-//  SummNumb(2,4);   
+// int SummNumb(int arg1, int arg2)
+// {
+//     int a = 0;
+//     while (arg1 < arg2)
+//     {
+//         if (arg1 % 2 == 0)
+//         {
+//             a = arg1 * arg1 * arg1;
+//             arg1++;
+//         }
+//         else
+//         {
+//             arg1++;
+//         }
+//     }
+//     return a;
+// }
+// Console.WriteLine(SummNumb(1, 10));  
 
 
 
