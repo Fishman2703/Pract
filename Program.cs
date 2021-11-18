@@ -145,4 +145,203 @@
 // FillArray(arr,0,1);
 // Console.WriteLine(PrintArray(arr));
 
+// 33. Задать массив из 12 элементов, заполненных числами из [0,9]. Найти сумму положительных/отрицательных элементов массива
 
+// int[] CreateArray(int count)
+// {
+//     return new int[count];
+// }
+// string PrintArray(int[] array)
+// {
+//     string res = String.Empty;
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         res += $"{array[i]} ";
+//     }
+//     return res;
+// }
+// void FillArray(int[] array, int min, int max)
+// {
+//     string res = String.Empty;
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         array[i] = new Random().Next(min, max + 1);
+//     }
+// }
+// int[] A = CreateArray(12);
+// FillArray(A,-9,9);
+// Console.WriteLine(PrintArray(A));
+
+// string Sum(int[] arr)
+// {
+//     int sumPlus = 0;
+//     int sumMinus = 0;
+//     for (int i=0;i<arr.Length;i++)
+//     {
+//         if(arr[i]>0)
+//         {
+//             sumPlus = sumPlus + arr[i];
+//         }
+//         if(arr[i]<0)
+//         {
+//             sumMinus = sumMinus + arr[i];
+//         }
+//     }
+// return $"сумма положительных чисел = {sumPlus}, сумма отрицательных чисел = {sumMinus}";
+// }
+// Console.WriteLine(Sum(A));
+
+// 34. Написать программу замену элементов массива на противоположные
+
+// int[] CreateArray(int count)
+// {
+//     return new int[count];
+// }
+// string PrintArray(int[] array)
+// {
+//     string res = String.Empty;
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         res += $"{array[i]} ";
+//     }
+//     return res;
+// }
+// void FillArray(int[] array, int min, int max)
+// {
+//     string res = String.Empty;
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         array[i] = new Random().Next(min, max + 1);
+//     }
+// }
+
+// void rep(int [] array)
+//  {
+//     string res = String.Empty;
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         array[i] = -array[i];
+//     }
+// }
+// int [] A = CreateArray(9);
+// FillArray(A,-10,10);
+// Console.WriteLine(PrintArray(A));
+// rep(A);
+// Console.WriteLine(PrintArray(A));
+
+// 35. Определить, присутствует ли в заданном массиве, некоторое число
+
+int[] CreateArray(int count)
+{
+    return new int[count];
+}
+string PrintArray(int[] array)
+{
+    string res = String.Empty;
+    for (int i = 0; i < array.Length; i++)
+    {
+        res += $"{array[i]} ";
+    }
+    return res;
+}
+void FillArray(int[] array, int min, int max)
+{
+    string res = String.Empty;
+    for (int i = 0; i < array.Length; i++)
+    {
+        array[i] = new Random().Next(min, max + 1);
+    }
+}
+// bool number(int [] array, int x)
+// {
+//     bool res = false;
+//     for(int i =0; i<array.Length; i++)
+//     {
+//     if(array[i] == x)
+//     {
+//         res = true;
+//         break;
+//     }
+// }
+// return res;
+// }
+int [] B = CreateArray(12);
+FillArray(B,0,10);
+Console.WriteLine(PrintArray(B));
+// Console.WriteLine(number(B,5));
+
+// 36. Задать массив, заполнить случайными положительными трёхзначными числами. Показать количество нечетных\четных чисел
+// string oddNum(int [] array)
+// {
+//     int odd = 0;
+//     int even = 0;
+//     for(int i = 0; i < array.Length; i++)
+//     {
+//         if(array[i] % 2 ==0)
+//         {
+//             odd = odd +1;
+//         }
+//         if(array[i] % 2 !=0)
+//         {
+//             even = even +1;
+//         }
+//     }
+// return $"количество четных: {odd}, колличество нечетных: {even}";
+// }
+// Console.WriteLine(oddNum(B));
+
+// 37. В одномерном массиве из 123 чисел найти количество элементов из отрезка [10,99]
+// int findNum(int [] array)
+// {
+//     int count = 0;
+//     for(int i =0; i < array.Length;i++)
+//     {
+//         if(10<array.Length && array.Length >99)
+//         {
+//             count = count + 1;
+//         }
+//     }
+// return count;    
+// }
+// Console.WriteLine(findNum(B));
+
+// 38. Найти сумму чисел одномерного массива стоящих на нечетной позиции
+// int sumArr(int [] array)
+// {
+//     int sum = 0;
+//     for(int i = 0; i < array.Length; i++)
+//     {
+//         if(array.Length % 2 ==0)
+//         {
+//             sum = sum + array[i];
+//         }
+//     }
+// return sum;
+// }
+// Console.WriteLine(sumArr(B));
+// Console.WriteLine(SummNumb(1, 10));  
+
+
+
+// //32. Задать массив из 8 элементов, заполненных нулями и единицами вывести их на экран
+
+// int [] arr = CreateArray(8);
+// FillArray(arr,0,1);
+// Console.WriteLine(PrintArray(arr));
+
+// 39. Найти произведение пар чисел в одномерном массиве. 
+/////////////////////Парой считаем первый и последний элемент, второй и предпоследний и т.д./////////////////////////////
+
+// string FindProductPairs (int[] array)
+// {
+//     string res = String.Empty;
+//     int result = 0;
+//     int last = array.Length - 1;
+//     for (int i = 0; i < array.Length / 2; i++, last--)
+//     {
+//         result = array[i] * array[last];
+//         res += $"{result} ";
+//     }
+//     return res;
+// }
+// Console.WriteLine(FindProductPairs(B));
