@@ -1,4 +1,4 @@
-﻿// / 23. Показать таблицу квадратов чисел от 1 до N
+// / 23. Показать таблицу квадратов чисел от 1 до N
 // // void Pow2(int n)
 // // {
 // //     for (int i = 1; i <= n; i++)
@@ -110,7 +110,7 @@
 //     }
 //     return a;
 // }
-// Console.WriteLine(SummNumb(1, 10));  
+// Console.WriteLine(SummNumb(1, 10));    
 
 // 31. Задать массив из 8 элементов и вывести их на экран
 
@@ -231,27 +231,27 @@
 
 // 35. Определить, присутствует ли в заданном массиве, некоторое число
 
-int[] CreateArray(int count)
-{
-    return new int[count];
-}
-string PrintArray(int[] array)
-{
-    string res = String.Empty;
-    for (int i = 0; i < array.Length; i++)
-    {
-        res += $"{array[i]} ";
-    }
-    return res;
-}
-void FillArray(int[] array, int min, int max)
-{
-    string res = String.Empty;
-    for (int i = 0; i < array.Length; i++)
-    {
-        array[i] = new Random().Next(min, max + 1);
-    }
-}
+// int[] CreateArray(int count)
+// {
+//     return new int[count];
+// }
+// string PrintArray(int[] array)
+// {
+//     string res = String.Empty;
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         res += $"{array[i]} ";
+//     }
+//     return res;
+// }
+// void FillArray(int[] array, int min, int max)
+// {
+//     string res = String.Empty;
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         array[i] = new Random().Next(min, max + 1);
+//     }
+// }
 // bool number(int [] array, int x)
 // {
 //     bool res = false;
@@ -265,9 +265,9 @@ void FillArray(int[] array, int min, int max)
 // }
 // return res;
 // }
-int [] B = CreateArray(12);
-FillArray(B,0,10);
-Console.WriteLine(PrintArray(B));
+// int [] B = CreateArray(12);
+// FillArray(B,0,10);
+// Console.WriteLine(PrintArray(B));
 // Console.WriteLine(number(B,5));
 
 // 36. Задать массив, заполнить случайными положительными трёхзначными числами. Показать количество нечетных\четных чисел
@@ -321,14 +321,6 @@ Console.WriteLine(PrintArray(B));
 // Console.WriteLine(sumArr(B));
 // Console.WriteLine(SummNumb(1, 10));  
 
-
-
-// //32. Задать массив из 8 элементов, заполненных нулями и единицами вывести их на экран
-
-// int [] arr = CreateArray(8);
-// FillArray(arr,0,1);
-// Console.WriteLine(PrintArray(arr));
-
 // 39. Найти произведение пар чисел в одномерном массиве. 
 /////////////////////Парой считаем первый и последний элемент, второй и предпоследний и т.д./////////////////////////////
 
@@ -345,3 +337,50 @@ Console.WriteLine(PrintArray(B));
 //     return res;
 // }
 // Console.WriteLine(FindProductPairs(B));
+
+// 40. В Указанном массиве вещественных чисел найдите разницу между максимальным и минимальным элементом.
+// int[] CreateArray(int count)
+// {
+//     return new int[count];
+// }
+// string PrintArray(int[] array)
+// {
+//     string res = String.Empty;
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         res += $"{array[i]} ";
+//     }
+//     return res;
+// }
+// void FillArray(int[] array, int min, int max)
+// {
+//     string res = String.Empty;
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         array[i] = new Random().Next(min, max + 1);
+//     }
+// }
+// string difference(int[] array)
+// {
+//     int max = 0;
+//     int min = array[1];
+//     int diff = 0;
+//     for(int i=1; i < array.Length;i++)
+//     {
+//         if(array[i] > max)
+//         {
+//             max = array[i];
+//         }
+//         if(array[i]<min)
+//         {
+//             min = array[i];
+//         }
+//         diff = max - min;   
+//     }
+//     return $"максимальное: {max}, минимальное: {min}, разница: {diff}";
+// }
+// int[] B = CreateArray(10);
+// FillArray(B,10,100);
+// Console.WriteLine(PrintArray(B));
+// Console.WriteLine(difference(B));
+
